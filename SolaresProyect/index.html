@@ -3,6 +3,7 @@
 <head>
   <!-- Theme Made By www.w3schools.com -->
   <title>Solares</title>
+  <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,27 +12,38 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
   body {
+    
+    
     font: 400 15px Lato, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
     color: #818181;
   }
   h2 {
-    font-size: 24px;
+    font-size: 34px;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    color: #303030;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #13284a;
     font-weight: 600;
     margin-bottom: 30px;
   }
   h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: #13284a;
     font-weight: 400;
     margin-bottom: 30px;
   }  
+  .imagencita{
+    border: #f39e00 solid 4px;
+    border-radius: 2px;
+  }
   .jumbotron {
-    background-color: #f4511e;
+    background-color: #13284a;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -43,11 +55,11 @@
     background-color: #f6f6f6;
   }
   .logo-small {
-    color: #f4511e;
+    color: #f39f00;
     font-size: 50px;
   }
   .logo {
-    color: #f4511e;
+    color: #f39f00;
     font-size: 200px;
   }
   .thumbnail {
@@ -62,13 +74,16 @@
   }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #f4511e;
+    color: #f39f00;
+  }
+  strong{
+    color: #13284a;
   }
   .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: #13284a;
   }
   .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: #13284a;
   }
   .item h4 {
     font-size: 19px;
@@ -81,7 +96,7 @@
     font-style: normal;
   }
   .panel {
-    border: 1px solid #f4511e; 
+    border: 1px solid #13284a; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
   }
@@ -89,13 +104,13 @@
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
+    border: 1px solid #13284a;
     background-color: #fff !important;
-    color: #f4511e;
+    color: #13284a;
   }
   .panel-heading {
     color: #fff !important;
-    background-color: #f4511e !important;
+    background-color: #13284a !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -115,12 +130,12 @@
   }
   .panel-footer .btn {
     margin: 15px 0;
-    background-color: #f4511e;
+    background-color: #13284a;
     color: #fff;
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: #13284a; 
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -130,21 +145,33 @@
     font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+    color: #f39e00 !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
+    color: #13284a !important;
+    background-color: #f39f00 !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: #f39f00!important;
   }
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #f4511e;
+    color: #f39f00;
   }
+  .btn-lg{
+    background-color: #f39e00;
+    color: #13284a;
+    border-color: #13284a;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+  }
+  .btn:hover{
+    color: #f39e00;
+    background-color: #13284a;
+  }
+  
   .slideanim {visibility:hidden;}
   .slide {
     animation-name: slide;
@@ -190,7 +217,7 @@
   }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="20">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -200,7 +227,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage"><img src="SOLARES SVG.svg" alt="Logo Solares" height="50px" style="position: relative;top: -15px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -215,43 +242,39 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Solares</h1> 
-  <p>Nos especializamos en la instalación de Paneles Solares y fomentamos el uso de la energía renovables en los hogares</p> 
-  <form>
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
+  <h1 style="font-family: 'Bebas Neue', sans-serif;letter-spacing: 4px;color: #f39f00;">Solares</h1> 
+  <hr>
+  <p >Especializados en la instalación de Paneles Solares en los Hogares.</p> 
 </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>Acerca de Solares</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <!-- <br><button class="btn btn-default btn-lg">Get in Touch</button> -->
+      <h2 class="text-center">Acerca de Solares</h2><br>
+      <h4>Somos una empresa dedicada a la instalación y mantenimiento de paneles y baterías solares para hogares, unificado en un sistema accesible y fácil de administrar por los usuarios, con el fin de utilizar esta energía renovable como principal fuente eléctrica o como segunda opción en caso de apagones.</h4><br>
+      <p>Brindamos soporte y atención a los clientes que presenten una inquietud o falla con el servicio y nos caracterizamos por apoyar e impulsar medidas ecológicas que beneficien al planeta a largo plazo.</p>
+      <div class="text-center"><br><button class="btn btn-default btn-lg">Contáctanos</button> </div>
+      
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+      <div class="text-center" style="margin: 50px 30px;">
+      <span class=""><img src="logo.png" alt="Logo Solares" class="img-responsive text-center"></span></div>
     </div>
   </div>
 </div>
 
 <div class="container-fluid bg-grey">
   <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    <div class="col-sm-5">
+      <img src="assets/paneles.png" alt="Paneles Solares" class="img-responsive slideanim imagencita " style="margin-top: 24%;">
     </div>
-    <div class="col-sm-8">
-      <h2>Nuestros Valores</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="col-sm-7">
+      <h2 class="text-center">Nuestros Valores</h2><br>
+      <h4><strong>MISIÓN</strong></h4>
+      <h4> Nuestra misión es brindar una fuente de energía renovable a todos los hogares, de una forma accesible ecológica con el fin de proporcionar un método alternativo de electricidad a las familias a un excelente precio.</h4><br>
+      <h4><strong>VISIÓN</strong></h4>
+      <h4>Nuestra visión es ser la empresa N°1 en suministrar energía renovable en el país, llegar a todos los hogares y demostrar la facilidad de obtener energía eléctrica con paneles solares y reducir los daños al medio ambiente ocasionados por las energías no renovables convencionales.</h4>
     </div>
   </div>
 </div>
@@ -264,64 +287,65 @@
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>ENERGÍA</h4>
+      <p>Mantenemos tu casa encendida por largos períodos de tiempo.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>SOPORTE</h4>
+      <p>Atención al usuario todos los días.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>SATISFACCIÓN</h4>
+      <p>Brindamos un trabajo de primera calidad.</p>
     </div>
   </div>
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>VERDE</h4>
+      <p>Impulsamos el uso de productos ecológicos y energía renovable.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>EXPERTOS</h4>
+      <p>Contamos con los mejores expertos en el área.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4 style="color:#303030;">TRABAJO DURO</h4>
+      <p>Nos esforzamos en cumplir con tus necesidades.</p>
     </div>
   </div>
 </div> 
+ <!-- ?AGREGAR PAGINA DE EDUARDO -->
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portafolio</h2><br>
+  <h2>Portafolio</h2>
   <h4>Lo que hemos creado</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Panelcito Solar en Santa Rosa de Agua</strong></p>
-        <p>Corpoelec quedo mamando y loco</p>
+        <img src="assets/casa1.jpg" alt="Paris" width="400" height="350px">
+        <p><strong>Paneles Solares en Santa Rosa de Agua</strong></p>
+        <p>Instalación de Paneles Solares en un palafito de Santa Rosa de Agua</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>Rancho con Panel Solar</strong></p>
-        <p>Ranchito con antena DIRECTV y Panel Solar cachuo</p>
+        <img src="assets/casa2.jpg" alt="New York" width="400" height="300px">
+        <p><strong>Proyecto: ECO Oasis Country II</strong></p>
+        <p>Implantación del sistema Solares en la villa Oasis Country II</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>EcoCorpoelec</strong></p>
-        <p>Es mentira</p>
+        <img src="assets/casa3.jpg" alt="San Francisco" width="400" height="300px">
+        <p><strong>Paneles Solares en Corpoelec</strong></p>
+        <p>Auditorías acerca de los paneles solares y cursos de instalación en Corpoelec</p>
       </div>
     </div>
   </div><br>
@@ -338,13 +362,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"Esta compañía es la mejor. Esta arrechito los planes"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>"El uso y mantenimiento del sistema es muy fácil! Me cambio la vida"<br><span>Marcos Vásquez, Padre de hogar</span></h4>
       </div>
       <div class="item">
-        <h4>"Que baratooo"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+        <h4>"Que baratooo"<br><span>Hermano Valentino, Payaso del circo de los hermanos Valentinos</span></h4>
       </div>
       <div class="item">
-        <h4>"Cuando se me va la luz ya no sufro gracias a esta compañía"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+        <h4>"Cuando se me va la luz ya no sufro gracias a esta compañía"<br><span>Gustavo Delgado, Profesor de URBE</span></h4>
       </div>
     </div>
 
@@ -361,66 +385,67 @@
 </div>
 
 <!-- Container (Pricing Section) -->
+<!-- ?Actualizar los planes -->
 <div id="pricing" class="container-fluid">
   <div class="text-center">
-    <h2>Servicios</h2>
+    <h2>Planes</h2>
     <h4>Escoge un plan que se adapte a tus necesidades</h4>
   </div>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Basic</h1>
+          <h1>Hogar</h1>
         </div>
         <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>3</strong> Paneles Solares</p>
+          <p><strong>1</strong> Año de garantía</p>
+          <p><strong>2</strong> Baterías Solares</p>
+          <p><strong>1</strong> Inversor de corriente</p>
+          <p><strong>Soporte</strong> Ilimitado</p>
         </div>
         <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>$500</h3>
+          <h4>O al cambio en Bs.</h4>
+          <button class="btn btn-lg"  style="background-color:#f39e00;">Sign Up</button>
         </div>
       </div>      
     </div>     
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Pro</h1>
+          <h1>Empresa</h1>
         </div>
         <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>30</strong> Paneles Solares</p>
+          <p><strong>5</strong> Años de garantía</p>
+          <p><strong>10</strong> Baterías Solare</p>
+          <p><strong>2</strong> Inversores de corriente</p>
+          <p><strong>Soporte</strong> Ilimitado</p>
         </div>
         <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>$3.000</h3>
+          <h4>O al cambio en Bs.</h4>
+          <button class="btn btn-lg" style="background-color:#f39e00 ;">Sign Up</button>
         </div>
       </div>      
     </div>       
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Premium</h1>
+          <h1>Villa</h1>
         </div>
         <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>100</strong> Paneles Solares</p>
+          <p><strong>6</strong> Años de garantía</p>
+          <p><strong>80</strong> Baterías Solares</p>
+          <p><strong>30</strong> Inversores de corriente</p>
+          <p><strong>1</strong> Coca Cola 1.5 Lts</p>
         </div>
         <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>$11.000</h3>
+          <h4>O al cambio en Bs.</h4>
+          <button class="btn btn-lg" style="background-color:#f39e00;">Sign Up</button>
         </div>
       </div>      
     </div>    
@@ -436,8 +461,12 @@
       <p><span class="glyphicon glyphicon-map-marker"></span> Maracaibo, Venezuela</p>
       <p><span class="glyphicon glyphicon-phone"></span> +58 4241111111</p>
       <p><span class="glyphicon glyphicon-envelope"></span> soporte@solares.com</p>
+      <p><i class="bi bi-instagram"> <span>@solaresmcbo</span></i></p>
+      <p><i class="bi bi-twitter-x"></i> <span>Solares</span></i></p>
+      <p><i class="bi bi-linkedin"></i> <span>Solares</span></i></p>
     </div>
     <div class="col-sm-7 slideanim">
+      <!-- ?AÑADIR INSTAGRAM Y TWITTER - VOLVER A INICIO YA GREGAR SIGNO DE COPYRIGHT -->
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
@@ -446,10 +475,10 @@
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="10"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+          <button class="btn btn-default btn-lg pull-right" type="submit">Enviar</button>
         </div>
       </div>
     </div>
@@ -457,13 +486,13 @@
 </div>
 
 <!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Todos los derechos reservados.</p>
+  <p>&copy; Todos los derechos reservados.</p>
 </footer>
 
 <script>
